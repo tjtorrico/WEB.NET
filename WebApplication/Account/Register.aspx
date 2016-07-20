@@ -23,38 +23,72 @@
 
                     <fieldset>
                         <legend>Formulario de registro</legend>
-                        <ol>
-                            <li>
-                                <asp:Label runat="server" AssociatedControlID="UserName">Nombre de usuario</asp:Label>
-                                <asp:TextBox runat="server" ID="UserName" />
-                                <br />
-                                <asp:RequiredFieldValidator runat="server" ControlToValidate="UserName"
-                                    CssClass="field-validation-error" ErrorMessage="El campo de nombre de usuario es obligatorio." />
-                            </li>
-                            <li>
-                                <asp:Label runat="server" AssociatedControlID="Email">Dirección de correo electrónico</asp:Label>
-                                <asp:TextBox runat="server" ID="Email" TextMode="Email" />
-                                <br />
-                                <asp:RequiredFieldValidator runat="server" ControlToValidate="Email"
-                                    CssClass="field-validation-error" ErrorMessage="El campo de dirección de correo es obligatorio." />
-                            </li>
-                            <li>
-                                <asp:Label runat="server" AssociatedControlID="Password">Contraseña</asp:Label>
-                                <asp:TextBox runat="server" ID="Password" TextMode="Password" />
-                                <br />
-                                <asp:RequiredFieldValidator runat="server" ControlToValidate="Password"
-                                    CssClass="field-validation-error" ErrorMessage="El campo de contraseña es obligatorio." />
-                            </li>
-                            <li>
-                                <asp:Label runat="server" AssociatedControlID="ConfirmPassword">Confirmar contraseña</asp:Label>
-                                <asp:TextBox runat="server" ID="ConfirmPassword" TextMode="Password" />
-                                <br />
-                                <asp:RequiredFieldValidator runat="server" ControlToValidate="ConfirmPassword"
-                                     CssClass="field-validation-error" Display="Dynamic" ErrorMessage="El campo de confirmación de contraseña es obligatorio." />
-                                <asp:CompareValidator runat="server" ControlToCompare="Password" ControlToValidate="ConfirmPassword"
-                                     CssClass="field-validation-error" Display="Dynamic" ErrorMessage="La contraseña y la contraseña de confirmación no coinciden." />
-                            </li>
-                        </ol>
+                        <section class="registerLeftForm">
+                            <ol>
+                                <li>
+                                    <asp:Label runat="server" AssociatedControlID="UserName">Nombre de usuario</asp:Label>
+                                    <asp:TextBox runat="server" ID="UserName" />
+                                    <br />
+                                    <asp:RequiredFieldValidator runat="server" ControlToValidate="UserName"
+                                        CssClass="field-validation-error" ErrorMessage="El campo de nombre de usuario es obligatorio." />
+                                </li>
+                                <li>
+                                    <asp:Label runat="server" AssociatedControlID="Email">Dirección de correo electrónico</asp:Label>
+                                    <asp:TextBox runat="server" ID="Email" TextMode="Email" />
+                                    <br />
+                                    <asp:RequiredFieldValidator runat="server" ControlToValidate="Email"
+                                        CssClass="field-validation-error" ErrorMessage="El campo de dirección de correo es obligatorio." />
+                                </li>
+                                <li>
+                                    <asp:Label runat="server" AssociatedControlID="Password">Contraseña</asp:Label>
+                                    <asp:TextBox runat="server" ID="Password" TextMode="Password" />
+                                    <br />
+                                    <asp:RequiredFieldValidator runat="server" ControlToValidate="Password"
+                                        CssClass="field-validation-error" ErrorMessage="El campo de contraseña es obligatorio." />
+                                </li>
+                                <li>
+                                    <asp:Label runat="server" AssociatedControlID="ConfirmPassword">Confirmar contraseña</asp:Label>
+                                    <asp:TextBox runat="server" ID="ConfirmPassword" TextMode="Password" />
+                                    <br />
+                                    <asp:RequiredFieldValidator runat="server" ControlToValidate="ConfirmPassword"
+                                        CssClass="field-validation-error" Display="Dynamic" ErrorMessage="El campo de confirmación de contraseña es obligatorio." />
+                                    <asp:CompareValidator runat="server" ControlToCompare="Password" ControlToValidate="ConfirmPassword"
+                                        CssClass="field-validation-error" Display="Dynamic" ErrorMessage="La contraseña y la contraseña de confirmación no coinciden." />
+                                </li>
+                            </ol>
+                        </section>
+                        <section class="registerRightForm">
+                            <ol>
+                                <li>
+                                    <asp:Label runat="server" AssociatedControlID="UsuarioSap">Usuario Sap Referencia</asp:Label>
+                                    <asp:TextBox runat="server" ID="UsuarioSap" />
+                                    <br />
+                                    <asp:RequiredFieldValidator runat="server" ControlToValidate="UsuarioSap"
+                                        CssClass="field-validation-error" ErrorMessage="El campo de usuario de sap es obligatorio." />
+                                </li>
+                                <li>
+                                    <asp:Label runat="server" AssociatedControlID="EmpleadoSap">Nombre Empleado Sap</asp:Label>
+                                    <asp:TextBox runat="server" ID="EmpleadoSap" />
+                                    <br />
+                                    <asp:RequiredFieldValidator runat="server" ControlToValidate="EmpleadoSap"
+                                        CssClass="field-validation-error" ErrorMessage="El campo de Empleado de sap es obligatorio." />
+                                </li>
+                                <li>
+                                    <asp:Label runat="server" AssociatedControlID="LicenciaEmpleado">Licencia del empleado</asp:Label>
+                                    <asp:TextBox runat="server" ID="LicenciaEmpleado" />
+                                    <br />
+                                    <asp:RequiredFieldValidator runat="server" ControlToValidate="LicenciaEmpleado"
+                                        CssClass="field-validation-error" ErrorMessage="El campo de Licencia de sap es obligatorio." />
+                                </li>
+                                <li>
+                                    <asp:Label runat="server" AssociatedControlID="EstadoEmpleado">Estado del empleado</asp:Label>
+                                    <asp:TextBox runat="server" ID="EstadoEmpleado" />
+                                    <br />
+                                    <asp:RequiredFieldValidator runat="server" ControlToValidate="EstadoEmpleado"
+                                        CssClass="field-validation-error" ErrorMessage="El campo de Estado de sap es obligatorio." />
+                                </li>
+                            </ol>
+                        </section>
                         <asp:Button runat="server" CommandName="MoveNext" Text="Registrarse" />
                     </fieldset>
                 </ContentTemplate>
