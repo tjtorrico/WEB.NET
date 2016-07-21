@@ -33,7 +33,7 @@
                                         CssClass="field-validation-error" ErrorMessage="El campo de nombre de usuario es obligatorio." />
                                 </li>
                                 <li>
-                                    <asp:Label runat="server" AssociatedControlID="Email">Dirección de correo electrónico</asp:Label>
+                                    <asp:Label runat="server" AssociatedControlID="Email">Correo electrónico</asp:Label>
                                     <asp:TextBox runat="server" ID="Email" TextMode="Email" />
                                     <br />
                                     <asp:RequiredFieldValidator runat="server" ControlToValidate="Email"
