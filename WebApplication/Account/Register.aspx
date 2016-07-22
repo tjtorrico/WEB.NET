@@ -23,7 +23,7 @@
 
                     <fieldset>
                         <legend>Formulario de registro</legend>
-                        <section class="registerLeftForm">
+                        <section class="float-left">
                             <ol>
                                 <li>
                                     <asp:Label runat="server" AssociatedControlID="UserName">Nombre de usuario</asp:Label>
@@ -57,7 +57,7 @@
                                 </li>
                             </ol>
                         </section>
-                        <section class="registerRightForm">
+                        <section class="float-right">
                             <ol>
                                 <li>
                                     <asp:Label runat="server" AssociatedControlID="UsuarioSap">Usuario Sap Referencia</asp:Label>
@@ -87,9 +87,11 @@
                                     <asp:RequiredFieldValidator runat="server" ControlToValidate="EstadoEmpleado"
                                         CssClass="field-validation-error" ErrorMessage="El campo de Estado de sap es obligatorio." />
                                 </li>
+                                <li>
+                                    <asp:Button ID="Button1" runat="server" CommandName="MoveNext" Text="Registrarse" />
+                                </li>
                             </ol>
                         </section>
-                        <asp:Button runat="server" CommandName="MoveNext" Text="Registrarse" />
                     </fieldset>
                 </ContentTemplate>
                 <CustomNavigationTemplate />

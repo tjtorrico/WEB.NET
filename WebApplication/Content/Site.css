@@ -664,18 +664,6 @@ tr.pager td
     padding: 0 0.25em 0 0;
 }
 
-.registerLeftForm
-{
-    float: left;
-    width: 50%;
-}
-
-.registerRightForm
-{
-    float: right;
-    width: 50%;
-}
-
 
 /********************
 *   Mobile Styles   *
@@ -828,19 +816,7 @@ tr.pager td
     {
         width: 90%;
     }
-
-    .registerLeftForm
-    {
-        float: none;
-        width: auto;
-    }
-
-    .registerRightForm
-    {
-        float: none;
-        width: auto;
-    }
-
+    
     /* login page */
     #loginForm
     {
